@@ -12,6 +12,7 @@ services:
       - certs:/etc/nginx/certs
       - /run/docker.sock:/tmp/docker.sock:ro
       - ./client_max_body_size.conf:/etc/nginx/conf.d/client_max_body_size.conf:ro
+      - ./htpasswd:/etc/nginx/htpasswd:ro
     networks:
       - net
     ports:
