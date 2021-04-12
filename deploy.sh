@@ -7,6 +7,7 @@ REMOTE_PATH=/home/guillaume/www/nginx-proxy/
 
 rsync -av --delete \
     --exclude=deploy.sh \
+    --exclude=README.md \
     --exclude=.git \
     --exclude=.env \
     --exclude=*.dist \
