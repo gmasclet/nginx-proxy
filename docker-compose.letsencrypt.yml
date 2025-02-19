@@ -2,7 +2,7 @@
 version: "3.7"
 services:
   letsencrypt:
-    image: jrcs/letsencrypt-nginx-proxy-companion:latest
+    image: jrcs/letsencrypt-nginx-proxy-companion:2.0.2
     container_name: letsencrypt
     restart: unless-stopped
     volumes:
